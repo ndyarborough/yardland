@@ -1,4 +1,3 @@
-import oakpark from '../imgs/oakpark.png';
 
 const About = () => {
     return (

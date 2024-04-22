@@ -1,4 +1,3 @@
-import oakpark from '../imgs/oakpark.png';
 import ContactIcon from '../imgs/contact.jpg';
 import location from '../imgs/location.png';
 
