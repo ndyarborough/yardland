@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yardland/static/css/main.40013144.css",
-    "main.js": "/yardland/static/js/main.82f77adc.js",
+    "main.js": "/yardland/static/js/main.becbfe6e.js",
     "static/media/lawncare.jpg": "/yardland/static/media/lawncare.e07274cfcd1d0ced91d1.jpg",
     "static/media/leafblowing.jpg": "/yardland/static/media/leafblowing.b439caa8fd5afd668823.jpg",
     "static/media/trim.jpg": "/yardland/static/media/trim.1cb3c50fe61138a472a5.jpg",
@@ -16,10 +16,10 @@
     "static/media/contact.jpg": "/yardland/static/media/contact.0c59cbbd87b6854e7233.jpg",
     "index.html": "/yardland/index.html",
     "main.40013144.css.map": "/yardland/static/css/main.40013144.css.map",
-    "main.82f77adc.js.map": "/yardland/static/js/main.82f77adc.js.map"
+    "main.becbfe6e.js.map": "/yardland/static/js/main.becbfe6e.js.map"
   },
   "entrypoints": [
     "static/css/main.40013144.css",
-    "static/js/main.82f77adc.js"
+    "static/js/main.becbfe6e.js"
   ]
 }
