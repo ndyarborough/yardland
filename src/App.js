@@ -31,20 +31,13 @@ function App() {
         </nav>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/yardland" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        {isMenuOpen && (
-          <div className="menu-modal" onClick={handleClick}>
-              <Link className='nav-item' to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link className='nav-item' to='/about' onClick={() => setIsMenuOpen(false)}>Our Story</Link>
-              <Link className='nav-item' to='/services' onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link className='nav-item' to='/contact' onClick={() => setIsMenuOpen(false)}>Contact</Link>
-          </div>
-        )}
+
         <footer>
           <div className='column'>
             <div className='row'>
