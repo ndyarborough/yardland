@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -8,30 +9,42 @@ import menu from './imgs/menu.png';
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <Router>
       <div className="App">
         <nav>
-          <img className='logo' src={logo}></img>
+          <img className='logo' src={logo} alt="Logo"></img>
           <ul className='nav-items'>
-            <Link className='nav-item' to='/'>Home</Link>
-            <Link className='nav-item' to='/about'>Our Story</Link>
-            <Link className='nav-item' to='/services'>Services</Link>
-            <Link className='nav-item' to='/contact'>Contact</Link>
+            <Link className='nav-item' to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link className='nav-item' to='/about' onClick={() => setIsMenuOpen(false)}>Our Story</Link>
+            <Link className='nav-item' to='/services' onClick={() => setIsMenuOpen(false)}>Services</Link>
+            <Link className='nav-item' to='/contact' onClick={() => setIsMenuOpen(false)}>Contact</Link>
           </ul>
-          <img className='menu-icon' src={menu} alt="Menu Icon"></img>
+          <img className='menu-icon' src={menu} alt="Menu Icon" onClick={handleClick}></img>
         </nav>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/yardland" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        {isMenuOpen && (
+          <div className="menu-modal" onClick={handleClick}>
+              <Link className='nav-item' to='/' onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link className='nav-item' to='/about' onClick={() => setIsMenuOpen(false)}>Our Story</Link>
+              <Link className='nav-item' to='/services' onClick={() => setIsMenuOpen(false)}>Services</Link>
+              <Link className='nav-item' to='/contact' onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          </div>
+        )}
         <footer>
           <div className='column'>
             <div className='row'>
@@ -49,10 +62,10 @@ function App() {
           </div>
           <div className='column'>
             <div className='column'>
-            <Link to='services'>
-              <h4>Services</h4>
-            </Link>
-            <hr></hr>
+              <Link to='services'>
+                <h4>Services</h4>
+              </Link>
+              <hr></hr>
               <ul>
                 <li>Lawn Care</li>
                 <li>Mulch</li>

@@ -396,4 +396,45 @@ hr {
   footer {
     font-size: .85em
   }
+  .menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* semi-transparent red */
+    z-index: 1000;
+    transition: opacity 1.3s ease-in-out;
+  }
+
+  .menu-modal a {
+    margin: 1em;
+  }
+  
+  .App {
+    overflow: hidden;
+  }
+  
+  .menu-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .service {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service .column.lawncare ,.service .column.bushtrimming ,.service .column.mulch ,.service .column.clearout,.service .column.leafblowing,
+  .service .column.haul {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
 }
