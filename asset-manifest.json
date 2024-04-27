@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yardland/static/css/main.598a6658.css",
-    "main.js": "/yardland/static/js/main.92728f26.js",
+    "main.css": "/yardland/static/css/main.398d3931.css",
+    "main.js": "/yardland/static/js/main.44383ea5.js",
     "static/media/lawncare.jpg": "/yardland/static/media/lawncare.e07274cfcd1d0ced91d1.jpg",
     "static/media/leafblowing.jpg": "/yardland/static/media/leafblowing.b439caa8fd5afd668823.jpg",
     "static/media/trim.jpg": "/yardland/static/media/trim.1cb3c50fe61138a472a5.jpg",
@@ -15,11 +15,11 @@
     "static/media/logo.png": "/yardland/static/media/logo.73157f1b7d4ed71e343b.png",
     "static/media/contact.jpg": "/yardland/static/media/contact.0c59cbbd87b6854e7233.jpg",
     "index.html": "/yardland/index.html",
-    "main.598a6658.css.map": "/yardland/static/css/main.598a6658.css.map",
-    "main.92728f26.js.map": "/yardland/static/js/main.92728f26.js.map"
+    "main.398d3931.css.map": "/yardland/static/css/main.398d3931.css.map",
+    "main.44383ea5.js.map": "/yardland/static/js/main.44383ea5.js.map"
   },
   "entrypoints": [
-    "static/css/main.598a6658.css",
-    "static/js/main.92728f26.js"
+    "static/css/main.398d3931.css",
+    "static/js/main.44383ea5.js"
   ]
 }
