@@ -48,7 +48,42 @@ function App() {
           </Routes>
         </main>
         <footer>
-          {/* Footer content */}
+          <div className='column'>
+            <div className='row'>
+              <h5>Phone</h5>
+              <h4>919-802-6142</h4>
+            </div>
+            <div className='row'>
+              <h5>Address</h5>
+              <h4>5009 Weaver Dr, Raleigh, NC 27612</h4>
+            </div>
+            <div className='row'>
+              <h5>Service Areas</h5>
+              <h4>Cary, Raleigh, Morrisvile, Durham, Apex NC</h4>
+            </div>
+          </div>
+          <div className='column'>
+            <div className='column'>
+            <Link to='/yardland/services'>
+              <h4>Services</h4>
+            </Link>
+            <hr></hr>
+              <ul>
+                <li>Lawn Care</li>
+                <li>Mulch</li>
+                <li>Clearouts</li>
+              </ul>
+            </div>
+            <div className='column'>
+              <h4>Hours</h4>
+              <hr></hr>
+              <ul>
+                <li>Monday - Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 1pm</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
         </footer>
       </div>
     </Router>
